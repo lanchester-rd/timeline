@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #B7ABED95;
+    background-image: url(images/hero-bg-small.jpg);
+    background-repeat: no-repeat;
+    background-position: left 110%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 804px;
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* Align the nav-menu to the right */
+}
+
+.ul li{
+    font-size: 12px;
+    color: #626262;
+    list-style-type: none;
+    padding: 0;
+    text-align: right;  /* Right-align the text */
+}
+.stack-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 8pxs;
+  }
+
+.nav-menu {
+    width: 200px;
+    background-color: #BFE2AC;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    right: 0; /* Align to the right side */
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;  /* Right-align the text */
+}
+
+.nav-menu ul li {
+    text-align: left;
+}
+
+.nav-menu ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #B5ABEA;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  cursor: pointer;  
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px 6px 0px 0px;
+  color: #626262;
+  background:#F2F2F2;
+  border: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 0px;
+}
+
+.collapsible:focus {
+    color: #F2F2F2
+
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 12px;
+    color: #F2F2F2;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    color: #BCB3F2;
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #EAEAEA;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 6px;
+    background-color: #EAEAEA;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0px 0px 6px 6px;
+  }
+
+.timeline {
+    margin-right: 220px; /* Adjust according to nav-menu width */
+    position: relative;
+    max-width: 900px;
+    padding: 0px 0;
+    margin-left: auto; /* Align the timeline container to the right */
+}
+
+.timeline-line {
+    position: absolute;
+    right: 1%;
+    width: 5px;
+    height: 100%;
+    background: #B5ABEA;
+}
+
+.timeline-container {
+    margin: 0 auto;
+    padding: 10px 40px;
+    list-style-type: none;
+    position: relative;
+}
+
+
+.timeline-item {
+    background: white;
+    padding: 20px;
+    margin: 40px 10px 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-header {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.timeline-date {
+    font-size: 12px;
+    color: #626262;
+    margin-bottom: 10px;
+}
+
+
+.timeline-content h2 {
+    margin-top: 0;
+    font-size: 42px;
+    color: #0D0D0D;
+    margin-block-end: 8px;
+
+}
+
+.timeline-content p {
+    font-size: 12px;
+    color: #626262;
+}
+
+.timeline-ps {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #484848;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.timeline-ps h3 {
+    text-align: left;
+    font-size: 18px;
+    padding-right: 24px;
+    color: #484848;
+}
+
+.timeline-ltm {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #0D0D0D;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.timeline-ltm h3 {
+    text-align: left;
+    font-size: 18px;
+    padding-right: 24px;
+    color: #BCB3F2;
+}
+
+.timeline-cfc {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #0D0D0D;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.timeline-cfc h3 {
+    text-align: left;
+    font-size: 18px;
+    padding-right: 24px;
+    color: #CFC9F2;
+}
+
+.timeline-svi {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #0D0D0D;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.timeline-svi h3 {
+    text-align: left;
+    font-size: 18px;
+    padding-right: 24px;
+    color: #D5A89E;
+}
+
+.timeline-dopm {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #0D0D0D;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.timeline-dopm h3 {
+    text-align: left;
+    font-size: 18px;
+    padding-right: 24px;
+    color: #F2BFB3;
+}
+
+.timeline-ecs {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #0D0D0D;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.timeline-ecs h3 {
+    text-align: left;
+    font-size: 18px;
+    padding-right: 24px;
+    color: #BCD9A7;
+}
+
+.timeline-sud {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #0D0D0D;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.timeline-sud h3 {
+    text-align: left;
+    font-size: 18px;
+    padding-right: 24px;
+    color: #0D0D0D;
+}
+
+
+
+.timeline-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
